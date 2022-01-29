@@ -1,0 +1,487 @@
+.principal{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding: 100px;
+    
+}
+
+.menu_pricipal{
+    background-color: #6aadb6;
+    border-style: solid;
+    border-color: #6aadb6;
+    border-radius: 25px;
+    
+    
+}
+
+/*{margin:0;padding:0;box-sizing:border-box;font-size:0;}*/
+  nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    }
+          
+  nav li{
+    display:inline-block;
+    width:150px;
+    height:35px;
+    padding:5px 10px;
+    /*background-color:#000;
+    border:1px solid #000;*/
+    text-align:center;
+    color: rgb(253, 253, 253);
+    position:relative;
+    margin-top: -150px;
+  }
+          
+  nav li:hover{
+    background-color:#fff;
+    color:#000;
+    }
+          
+  nav li>ul{
+    display:none;
+    }
+  
+  nav li:hover>ul{
+    display:block;
+    position:absolute;
+    top:30px;
+    left:0px;
+  }
+
+
+
+/*PENDIENTE EL SUBTITULO_01 EL MARGIN TOP*/
+.subtitulo_01{
+    text-align: center;
+    margin-left: 80px;
+    margin-top: -810px;
+    color: white;
+}
+
+.logo_de_makita{
+      height: 90px;
+      width: 90px;
+      border-style: solid;
+      border-radius: 50px;
+      border-color: white;
+      background-color: lightblue;
+      border-width: 5px;
+}
+
+/*CSS DE LA SEGUNDA DIVISION DE LA PAGINA WEB*/
+
+
+
+/* CSS FINAL DE LA SEGUNDA DIVISION DE LA PAGINA WEB*/ 
+
+.logo_de_makita_2{
+      height: 120px;
+      width: 120px;
+      border-style: solid;
+      border-radius: 100px;
+      border-color: white;
+      background-color: lightblue;
+      border-width: 5px;
+
+}
+
+.texto_de_promociones{
+      color: white;
+      margin-top: 100px;
+      margin-left: 50px;
+}
+
+/*SEGUNDO SLIDER DE LAS PROMOCIONES*/
+
+#slider{
+      overflow: hidden;
+      width: 98vw;
+}
+#slider figure{
+      position: relative;
+      width: 600%;
+      margin: 0;
+      left: 0;
+      animation: 25s slider infinite;
+}
+#slider figure img{
+      width: 16.6666%;
+      float: left;
+}
+@keyframes slider{
+        0%{
+            left: 0;
+        }
+        15%{
+            left: 0;
+        }
+        20%{
+            left: -100%;
+        }
+        35%{
+            left: -100%;
+        }
+        40%{
+            left: -200%;
+        }
+        55%{
+            left: -200%;
+        }
+        60%{
+            left: -300%;
+        }
+        75%{
+            left: -300%;
+        }
+        80%{
+            left: -400%;
+        }
+        95%{
+            left: -400%;
+        }
+        100%{
+            left: -500%;
+        }
+}
+
+/*FINALIZACION DEL SEGUNDO SLIDER DE LAS PROMOCIONES*/
+
+.logo_de_makita_3{
+      height: 150px;
+      width: 150px;
+      border-style: solid;
+      border-radius: 100px;
+      border-color: white;
+      background-color: lightblue;
+      border-width: 5px;
+
+}
+
+.s3{
+      background-color: #6aadb6;
+}
+
+.s2{
+      background-color: #6aadb6;
+}
+
+/*TERCER SLIDER DE NOCHES CON DIHERESA*/
+.slides {
+  padding: 0;
+  width: 1000px;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  margin-left: 300px;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+  top: 0;
+  opacity: 0;
+  width: 609px;
+  height: 420px;
+  display: block;
+  position: absolute;
+
+  transform: scale(0);
+
+  transition: all .7s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav label {
+  width: 200px;
+  height: 100%;
+  display: none;
+  position: absolute;
+
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+
+  transition: opacity .2s;
+
+  color: #FFF;
+  font-size: 156pt;
+  text-align: center;
+  line-height: 380px;
+  font-family: "Varela Round", sans-serif;
+  background-color: rgba(255, 255, 255, .3);
+  text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+  opacity: 1;
+
+  transform: scale(1);
+
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+width: 100%;
+bottom: 9px;
+height: 11px;
+display: block;
+position: absolute;
+text-align: center;
+}
+
+.nav-dots .nav-dot {
+top: -5px;
+width: 11px;
+height: 11px;
+margin: 0 4px;
+position: relative;
+border-radius: 100%;
+display: inline-block;
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+cursor: pointer;
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+background: rgba(0, 0, 0, 0.8);
+}
+/*FINALIZACION DEL TERCER SLIDER DE NOCHES CON DIHERESA*/
+
+
+/*-------------------------------------
+09. Media Queries
+-------------------------------------*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/*IPAD PARADO*/
+@media (max-width: 991.98px){
+  nav li{
+    width:120px !important;
+    height:20px !important;
+    margin-left: -20px !important;
+    
+
+  }
+
+  .menu_pricipal{
+    margin-left: -150px !important;
+    border-left-width: -100px !important;
+    width: 900px !important;
+    
+    
+    
+    
+  }
+
+ .logo_de_makita{
+   margin-left: 0px !important;
+ }
+ 
+  .slides{
+    margin-left: 0px !important;
+
+  }
+
+  .texto_missmakita_01{
+    display: none;
+
+  }
+  .texto_missmakita_02{
+    display: none;
+  }
+
+}
+/*IPAD ACOSTADO*/
+@media (max-width: 1200px){
+
+  nav li{
+    width:120px !important;
+    height:20px !important;
+
+  }
+
+  .texto_missmakita_01{
+    display: none;
+  }
+
+  .texto_missmakita_02{
+    display: none;
+  }
+
+  .menu_pricipal{
+    margin-left: 0px !important;
+    border-left-width: 50px !important;
+    width: 900px !important;
+    
+  }
+
+ .logo_de_makita{
+   margin-left: 0px !important;
+ }
+ 
+  .slides{
+    margin-left: 0px !important;
+
+  }
+}
+
+/*TELEFONO PARADO*/
+@media (max-width: 575.98px){
+  nav li{
+    width:120px !important;
+    height:20px !important;
+    margin-left: -20px !important;
+    
+
+  }
+
+  .menu_pricipal nav{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+    
+  }
+
+  .logo_de_makita{
+    width: 40px !important;
+    height: 40px !important;
+
+  }
+
+  .logo_1{
+    width: 40px !important;
+    height: 40px !important;
+
+  }
+
+  .logo_de_makita_2{
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .logo_2{
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .logo_de_makita_3{
+    width: 80px !important;
+    height: 80px !important;
+    
+  }
+
+  .logo_3{
+    width: 80px !important;
+    height: 80px !important;
+    
+  }
+
+
+ 
+  .s3 .slides{
+
+   /* margin-left: -150px !important;
+    margin-right: -150px !important;*/
+    
+    transform: translate(-1%,-1%);
+   
+    
+    
+
+
+  }
+  .s2 .miss_makita{
+    max-width: 100% !important;
+    transform: translate(0%,0%);
+    height: 450px !important;
+  }
+
+  .texto_missmakita_01{
+    display: none;
+    
+
+  }
+  .texto_missmakita_02{
+    display: none;
+  }
+
+
+  .s3 .texto_noches_con_diheresa .text_noche1{
+    font-size: 30px !important;
+    transform: translate(0%,10%) !important;
+    margin-left: -10px !important;
+  }
+
+  .s3 .texto_noches_con_diheresa .text_noche2{
+    font-size: 20px !important;
+    transform: translate(0%,40%) !important;
+    margin-bottom: 20px !important;
+    margin-left: -10px !important;
+
+  }
+
+  .s2 h1{
+    font-size: 20px !important;
+    transform: translate(0%,10%) !important;
+
+  }
+  .s2 .texto_de_promociones .texto_promociones01{
+    font-size: 20px !important;
+    transform: translate(0%,60%) !important;
+
+  }
+
+  .s1{
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+}
